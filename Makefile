@@ -3,7 +3,7 @@ CCLINK=$(CC)
 CFLAGS=-g -Wall -std=c99
 OBJS=ransom.o
 EXEC=prog.exe
-RM=*.exe
+RM=*.exe *.o
 
 all: $(OBJS)
 	$(CCLINK) $(OBJS) -o $(EXEC)
