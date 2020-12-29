@@ -164,10 +164,10 @@ char** split_string(char* str) {
 
 void print_yes_or_no(int state){
     if(!state){
-    	printf("NO");
+    	printf("No");
     }
     else{
-    	printf("YES");
+    	printf("Yes");
     }
 
 }
@@ -186,7 +186,7 @@ void checkMagazine(int magazine_count,
     insert_into_map(&map,temp_str,where);
 /*insert the first key to the map
  * insert the rest of magazine to the map*/
-    map_maker( &map , (magazine +1) , magazine_count, where);
+    map_maker( &map , (magazine +1) , (magazine_count -1), where);
 /*insert note to the map*/
     map_maker( &map , note ,note_count,!(where));
 /* check if we can make note out of magazine */
